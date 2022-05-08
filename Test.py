@@ -1,3 +1,3 @@
-from person_data import *
+Name = "Star Citizen Star Star star"
 
-print(esther.name)
+print(Name.count("star"))
