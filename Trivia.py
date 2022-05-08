@@ -1,12 +1,14 @@
 import time
 
-#Asking user input for anwser
+# Asking user input for answer
 print("Who is the artist for the song: Billie Jean?")
-user_anwser = input()
-anwser = "Michael Jackson"
+user_answer = input()
+answer = "Michael Jackson"
 
-if user_anwser == anwser:
-    print(user_anwser + " was the correct anwser!")
+if user_answer == answer:
+    print(user_answer + " was the correct answer!")
 else:
-    print("Sorry, " + user_anwser + " isn't the right anwser. Try again")
+    print("Sorry, " + user_answer + " isn't the right answer. Try again")
     time.sleep(5)
+
+

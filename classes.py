@@ -1,4 +1,7 @@
-class person:
+from person_data import *
+
+
+class Person:
     def __init__(self, name, age, id):
         self.name = name
         self.age = age
@@ -21,22 +24,25 @@ class person:
 
     def running(self, miles = 0):
         print(miles)
-class cat:
-    def __init__(self, name, age, color):
-        self.name = name
-        self.age = age
-        self.color = color
 
-    def playing(self):
-            print(self.name, "is playing with the cardboard box")
 
-#Person data
-alex = person("Alex", 21, 1)
-daniel = person("Daniel", 21, 2)
-jozef = person("Jozef", 49, 3)
-#Cat data
-sage = cat("Sage", 6, "Black and White")
-angel = cat("Angel", 6, "Brown")
+def choose_player():
+    print("Choose your player")
+    print("1: Alex")
+    print("2: Daniel")
+    print("3: Jozef")
 
-sage.playing()
-angel.playing()
+    player = input()
+
+    match player:
+        case "1":
+            print("You've chosen", alex.name)
+        case "2":
+            print("You've chosen", daniel.name)
+        case "3":
+            print("You've chosen", jozef.name)
+        case "4":
+            print("There are only 3 players")
+        case _:
+            print("No selection has been made")
+
