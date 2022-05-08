@@ -1,10 +1,11 @@
-class Person:
+class person:
     def __init__(self, name, age, id):
         self.name = name
         self.age = age
         self.id = id
 
     def walking(self, miles = 0):
+        print(self.name)
         match miles:
             case 0:
                 print("You haven't walked yet...")
@@ -20,12 +21,22 @@ class Person:
 
     def running(self, miles = 0):
         print(miles)
+class cat:
+    def __init__(self, name, age, color):
+        self.name = name
+        self.age = age
+        self.color = color
 
+    def playing(self):
+            print(self.name, "is playing with the cardboard box")
 
-Alex = Person("Alex", 21, 1)
+#Person data
+alex = person("Alex", 21, 1)
+daniel = person("Daniel", 21, 2)
+jozef = person("Jozef", 49, 3)
+#Cat data
+sage = cat("Sage", 6, "Black and White")
+angel = cat("Angel", 6, "Brown")
 
-Daniel = Person("Daniel", 21, 2)
-
-Jozef = Person("Jozef", 49, 3)
-
-Alex.walking(2)
+sage.playing()
+angel.playing()
